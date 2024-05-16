@@ -18,4 +18,4 @@ from xterm.views import sio
 django_app = get_wsgi_application()
 application = socketio.Middleware(sio, django_app)
 
-eventlet.wsgi.server(eventlet.listen(('127.0.0.1', 8000)), application)
+eventlet.wsgi.server(eventlet.listen(('127.0.0.1', 80)), application)
